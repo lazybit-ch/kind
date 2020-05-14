@@ -14,7 +14,7 @@ The `kind` version is also set in the containers `KIND_VERSION` environment vari
 
 Example usage:
 ```
-docker run --rm -d --privileged --name kind lazybit.ch/kind:v0.7.0
+docker run --rm -d --privileged --name kind lazybit.ch/kind:v0.8.1
 docker exec -it kind kind create cluster
 docker exec -it kind kubectl cluster-info --context kind-kind
 docker exec -it kind kubectl get pod --all-namespaces

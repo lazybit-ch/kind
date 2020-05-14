@@ -1,7 +1,7 @@
 FROM docker:19.03.8-dind
 
 ARG KIND_VERSION
-ENV KIND_VERSION=${KIND_VERSION:-0.7.0}
+ENV KIND_VERSION=${KIND_VERSION:-0.8.1}
 
 ARG KUBECTL_VERSION
 ENV KUBECTL_VERSION=${KUBECTL_VERSION:-1.17.0}
@@ -11,7 +11,7 @@ ENV HELM_VERSION=${HELM_VERSION:-3.1.2}
 
 RUN apk add --no-cache \
         curl=7.67.0-r0 \
-        git=2.24.1-r0
+        git=2.24.3-r0
 
 RUN curl -Lo /usr/local/bin/kind https://github.com/kubernetes-sigs/kind/releases/download/v${KIND_VERSION}/kind-$(uname)-amd64 && \
     chmod 755 /usr/local/bin/kind
