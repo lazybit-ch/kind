@@ -1,4 +1,4 @@
-FROM docker:19.03.8-dind
+FROM docker:19.03.12-dind
 
 ARG KIND_VERSION
 ENV KIND_VERSION=${KIND_VERSION:-0.8.1}
