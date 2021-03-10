@@ -1,6 +1,6 @@
 # kind
 
-[kind](https://github.com/kubernetes-sigs/kind) `docker:19.03.8-dind` image build.
+[kind](https://github.com/kubernetes-sigs/kind) `docker:20.10.5-dind` image build.
 
 ## Build
 
