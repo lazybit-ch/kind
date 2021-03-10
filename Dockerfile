@@ -1,4 +1,4 @@
-FROM docker:19.03.12-dind
+FROM docker:20.10.3-dind
 
 ARG KIND_VERSION
 ENV KIND_VERSION=${KIND_VERSION:-0.8.1}
@@ -10,8 +10,8 @@ ARG HELM_VERSION
 ENV HELM_VERSION=${HELM_VERSION:-3.1.2}
 
 RUN apk add --no-cache \
-        curl=7.67.0-r0 \
-        git=2.24.3-r0
+        curl=7.74.0-r1 \
+        git=2.30.2-r0
 
 RUN curl -Lo /usr/local/bin/kind https://github.com/kubernetes-sigs/kind/releases/download/v${KIND_VERSION}/kind-$(uname)-amd64 && \
     chmod 755 /usr/local/bin/kind
